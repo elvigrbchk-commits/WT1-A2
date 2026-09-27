@@ -1,0 +1,106 @@
+.logoParrot{
+    width: 200px;
+    filter: hue-rotate(220deg) brightness(0.4) ;
+}
+.container{
+    background-color: #835fd6;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0;
+    position: relative;
+    z-index: 10;
+}
+.menu{
+    font-size: 30px;
+    display: flex;
+    gap: 70px;
+    padding-right: 40px;
+}
+a{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color:rgb(46, 6, 126);
+    background-color: #caa1ff;
+    padding: 10px 20px 10px 20px;
+    border-radius: 20px;
+    text-decoration: none;
+
+}
+a:hover{
+    color:rgb(44, 12, 132);
+}
+body{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: #f2e3fb;
+    margin: 0;
+}
+.Parrot{
+    width: 1000px;
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    opacity: 0.3;
+    transform: rotateY(180deg);
+    display: block;
+    margin: 0;
+    z-index: -1;
+    pointer-events: none;
+    filter: hue-rotate(220deg);
+}
+.grid-container {
+    display: grid;
+    grid-template-columns: 300px 1fr;
+    grid-template-rows: auto 1fr auto;
+    grid-template-areas: 
+        "header  header"
+        "sidebar main"
+        "footer  footer";
+    min-height: 100vh;
+    gap: 20px;
+}
+
+.container{
+    grid-area: header; 
+}
+.sidebar{
+    grid-area: sidebar;
+}
+.sidebar ul {
+    list-style-type: none;
+    padding-left: 0;
+    margin: 0;
+}
+.main-content{
+    grid-area: main;
+}
+.footer{
+    grid-area: footer;
+}
+.sidebar {
+    background-color: #bd8bff9a;
+    color:rgb(46, 6, 126);
+    padding: 25px;
+    margin-left: 20px;
+    border-radius: 15px;
+}
+
+.main-content {
+    background-color: #bd8bff9a;
+    color:rgb(46, 6, 126);
+    padding: 30px;
+    margin-right: 20px;
+    border-radius: 15px;
+}
+
+.main-content h1, .main-content h2 {
+    color:rgb(46, 6, 126);
+    margin-top: 0;
+}
+
+.footer {
+    background-color: #835fd6;
+    color: #f2e3fb;
+    text-align: center;
+    padding: 15px;
+}
